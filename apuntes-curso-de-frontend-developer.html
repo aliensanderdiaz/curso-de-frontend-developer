@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>Curso de Frontend Developer</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Curso de Frontend Developer</h1>
+    </header>
+    <main class="container">
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 1 de 23 - Inicia tu camino como frontend developer</h2>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 2 de 23 - ¿Qué es HTML y CSS? ¿Para qué sirven?</h2>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 3 de 23 - Motores de render: de archivos a píxeles</h2>
+                <p>El navegador hace 5 pasos</p>
+                <ul>
+                    <li>Pasa los archivos a objetos (DOM)</li>
+                    <li>Calcula el estilo correspondiente a cada nodo dom</li>
+                    <li>Calcula las dimensiones de cada nodo y donde va en la pantalla</li>
+                    <li>Pinta las diferentes cajas</li>
+                    <li>Toma las capas y las convierte en una imagen para mostrar en pantalla</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 4 de 23 - Anatomía de un documento HTML y sus elementos</h2>
+                <p>
+                    Un elemento se compone de:
+                </p>
+                <ul>
+                    <li>Etiqueta de apertura</li>
+                    <li>Contenido</li>
+                    <li>Etiqueta de cierre</li>
+                </ul>
+                <pre class="prettyprint">
+
+                      &lth1>PLATZI&lth1>
+                    </pre>
+                <p><strong>NOTA: </strong>Para algunos elementos no hay necesidad de una etiqueta de cierre, dado que
+                    son vacias, osea que tampoco poseen contenidos</p>
+                <p>
+                    Es comun que a los elementos se les asigne algunos atributos <br>
+                    Eso depende del tipo de elemento, algunos atributos son mas comunes que otros <br>
+                    Estos atributos se ubican en la etiqueta de apertura.
+                </p>
+                <pre class="prettyprint">
+
+                      &lth1 class="title">
+                    </pre>
+
+                <h3>Anidamiento</h3>
+                <p>Este concepto se refiere a que un elemento puede contener, uno o mas elementos</p>
+                <pre class="prettyprint">
+
+                      &ltsection>
+                        &lth1>Platzi&lt/h1>
+                        &ltp>Tiene una comunidad&lt/p>
+                        &ltul>
+                            &ltli>Increíble&lt/li>
+                            &ltli>Maravillosa&lt/li>
+                            &ltli>Inigualable&lt/li>
+                        &lt/ul>
+                      &lt/section>
+                    </pre>
+
+                <h3>Anatomia de un documento HTML</h3>
+                <p>
+                    Un documento HTML tiene ciertas reglas
+                </p>
+                <pre class="prettyprint">
+
+                      &lt!DOCTYPE html>
+                      &lthtml lang="en">
+                      &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                      &lt/head>
+                      &ltbody>
+                        
+                      &lt/body>
+                      &lt/html>
+                    </pre>
+                <p>
+                    No hay necesidad de aprenderla de memoria, porque los editores nos ayudan a crearla <br>
+                    Solo hay que tener en cuenta los elementos principales y cual es su función.
+                </p>
+                <p>
+                    <a href="./004-index.html" target="_blank" rel="noopener noreferrer">Mira nuestra primera página
+                        web</a>
+                </p>
+            </article>
+        </section>
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 5 de 23 - ¿Qué es HTML semántico?</h2>
+                <p>
+                    Resulta que en html una de las etiquetas mas usadas es el <em>div</em>, <br>
+                    pero no es muy recomendable abusar de ella, debido a que es una simple caja sin significado <br>
+                    a eso se refiere el html semantico, usar etiquetas con significado. <br>
+                </p>
+                <h3>Ventajas: </h3>
+                <ul>
+                    <li> Sitio accesible </li>
+                    <li> Posicionamiento SEO mejor </li>
+                    <li> Codigo mas claro </li>
+                </ul>
+                <h3>Ejemplo de etiquetas con significado</h3>
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>img</li>
+                    <li>footer</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 6 de 23 - Etiquetas de HTML mas usadas</h2>
+                <h3>LAYOUT</h3>
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>aside</li>
+                    <li>footer</li>
+                </ul>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li>a</li>
+                </ul>
+
+                <h3>Textos</h3>
+                <ul>
+                    <li>h1 ... h6</li>
+                    <li>p</li>
+                    <li>span</li>
+                </ul>
+
+                <h3>Imágenes y video</h3>
+                <ul>
+                    <li>img</li>
+                    <li>svg</li>
+                    <li>iframe</li>
+                    <li>video</li>
+                </ul>
+
+                <h3>Formularios</h3>
+                <ul>
+                    <li>form</li>
+                    <li>input</li>
+                    <li>label</li>
+                    <li>button</li>
+                </ul>
+
+                <h3>listas</h3>
+                <ul>
+                    <li>ul</li>
+                    <li>li</li>
+                    <li>ol</li>
+                </ul>
+
+                <p><strong>NOTA:</strong>
+                    podemos utilizar está pagina para profundizar en el tema:
+                    <a href="https://htmlreference.io/" target="_blank" rel="noopener noreferrer">https://htmlreference.io/</a>
+                </p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                    &lt/head>
+                    &ltbody>
+                        &ltnav>
+                            &ltul>
+                                &ltli>about us&lt/li>
+                                &ltli>contact us&lt/li>
+                            &lt/ul>
+                        &lt/nav>
+                        &ltsection>
+                            &ltdiv>
+                                &ltimg src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="cat">
+                            &lt/div>
+                            &ltdiv>
+                                &lth1>Cats&lt/h1>
+                                &ltp>Cats are awesome&lt/p>
+                            &lt/div>
+                        &lt/section>
+                        &ltform action="">
+                            &ltlabel for="name">Name&lt/label>
+                            &ltinput type="text" id="name">
+                        &lt/form>
+                        &lta href="https://platzi.com/">Go to Platzi&lt/a>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+
+                <p>
+                    Ejemplificando algunas etiquetas. <br>
+                    <strong>Nota</strong> <br>
+                    Podemos utlizar la siguiente web para obtener imagenes gratuitas: <br>
+                    <a href="https://www.pexels.com/es-es/" target="_blank" rel="noopener noreferrer">https://www.pexels.com/es-es/</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 7 de 23 - Anatomía de una declaración CSS: selectores, propiedades y valores</h2>
+                <p>
+                    El selector es el que nos dice que elemento de html se le va a aplicar estilos <br>
+                    La propiedad es la caracteristica que se quiere cambiar <br>
+                    El valor es cuanto o como queremos modificar
+                </p>
+                <pre class="prettyprint">
+                
+                  h1 {
+                    color: pink;
+                  }
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 8 de 23 - Tipos de selectores: básicos y combinadores</h2>
+                <h3>Selectores básicos</h3>
+                <ul>
+                    <li>De tipo -> div</li>
+                    <li>De Clase -> .clase</li>
+                    <li>De Id -> #id</li>
+                    <li>De Atributo -> a[href="..."]</li>
+                    <li>Universal -> *</li>
+                </ul>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            * {
+                                background-color: papayawhip;
+                            }
+                            div {
+                                background-color: pink;
+                            }
+                            .titulo {
+                                color: blueviolet;
+                            }
+                            #titulo-2 {
+                                color: brown;
+                            }
+                            a[href="https://platzi.com/"] {
+                                color: red;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv class="titulo">Hola&lt/div>
+                        &ltdiv id="titulo-2">Mundo&lt/div>
+                        &lta href="https://platzi.com/">https://platzi.com/&lt/a>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>
+                    <strong>NOTA: </strong> <br>
+                    Página para ver los colores por nombre: <br>
+                    <a href="https://htmlcolorcodes.com/" target="_blank" rel="noopener noreferrer">https://htmlcolorcodes.com/</a>
+                </p>
+
+                <h2>Selectores Combinadores</h2>
+                <ul>
+                    <li>Descendientes -> div p</li>
+                    <li>Hijo Directo -> div > p</li>
+                    <li>Elemento Adyacente -> div + p</li>
+                    <li>General de Hermanos -> div ~ p</li>
+                </ul>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            /* div p {
+                                color: blue;
+                            } */
+                    
+                            div > p {
+                                color: blue;
+                            }
+                    
+                            article + section {
+                                background-color: red;
+                            }
+                            section ~ aside {
+                                background-color: gray;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv>
+                            &ltp>Hola &lt/p>
+                            &ltp>Mundo&lt/p>
+                            &ltaside>
+                                aside
+                            &lt/aside>
+                        &lt/div>
+                        &ltp>Chao mundo&lt/p>
+                        &ltdiv>
+                            &ltarticle>
+                                &ltp>Adios Mundo&lt/p>
+                            &lt/article>
+                            &ltsection>
+                                hola de nuevo
+                            &lt/section>
+                            &ltsection>
+                                hola de nuevo 2
+                            &lt/section>
+                        &lt/div>
+                        &ltsection>
+                            chao de nuevo
+                        &lt/section>
+                        &ltaside>
+                            hello
+                        &lt/aside>
+                        &ltaside>
+                            bye
+                        &lt/aside>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+
+                <p>
+                    Archivo: <a href="./008-selectores-2.html" target="_blank">Selectores</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 9 de 23 - Tipos de selectores: pseeudoclase y pseudoelementos</h2>
+                <h3>Pseudoclases</h3>
+                <ul>
+                    <li>:active</li>
+                    <li>:focus</li>
+                    <li>:hover</li>
+                    <li>:nth-child(n)</li>
+                </ul>
+                <h3>Pseudoelementos</h3>
+                <ul>
+                    <li>::after</li>
+                    <li>::before</li>
+                    <li>::first-letter</li>
+                    <li>::placeholder</li>
+                </ul>
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            p {
+                                color: salmon;
+                            }
+                            p:hover {
+                                color: skyblue;
+                            }
+                            p:nth-child(2) {
+                                color: violet;
+                            }
+                            p::first-letter {
+                                color: teal;
+                            }
+                            p::before {
+                                content: "✨";
+                            }
+                            p::after {
+                                content: "💅";
+                            }
+                            ::placeholder {
+                                color: tomato;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltp>Hola&lt/p>
+                        &ltdiv>
+                            &ltp>Platzi&lt/p>
+                            &ltp>Master&lt/p>
+                            &ltp>Lo mejor&lt/p>
+                        &lt/div>
+                        &ltinput type="text" placeholder="name">
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>
+                    codigo en clase <a href="./009-selectores-3.html" target="_blank" rel="noopener noreferrer">Seupoclases y pseudoelementos</a>
+                    <br>
+                    Documentación <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">MDN</a>
+                    <br>
+                    <a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank" rel="noopener noreferrer">css-tricks</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 10 de 23 - Cascada y especificidad en CSS</h2>
+                <p><strong>CASCADA</strong> El orden en css IMPORTA</p>
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            h1 {
+                                color: red;
+                            }
+                            h1 {
+                                color: blue;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &lth1>Platzi&lt/h1>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo de clase <a href="./010-cascada.html" target="_blank" rel="noopener noreferrer">Cascada</a></p>
+
+                <h3>especificidad</h3>
+                <ul>
+                    <li>!important - x0000</li>
+                    <li>Estilos en linea - x000</li>
+                    <li>id - x00</li>
+                    <li>clases, atributos, seudoclases - x0</li>
+                    <li>elementos y seudoelementos - x</li>
+                    <li>selector Universal - 0</li>
+                </ul>
+
+                <p>Calculadora de especificidad <a href="https://specificity.keegan.st/" target="_blank" rel="noopener noreferrer">https://specificity.keegan.st/</a></p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            #platzi {
+                                color: red;
+                            }
+                            .master {
+                                color: blue;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv id="platzi" class="master">Platzi&lt/div>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo de clase: <a href="./010-especificidad.html" target="_blank" rel="noopener noreferrer">Especificidad</a></p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 11 de 23 - Tipos de display más usados: block, inline e inline-block</h2>
+                <ul>
+                    <li>block</li>
+                    <li>inline</li>
+                    <li>inline-block</li>
+                    <li>flex</li>
+                    <li>grid</li>
+                </ul>
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            body {
+                                margin: 0;
+                            }
+                            div {
+                                background: salmon;
+                                width: 200px;
+                                height: 200px;
+                                margin: 20px;
+                            }
+                            a {
+                                background: skyblue;
+                                width: 200px; /* Sin efecto */
+                                height: 200px; /* Sin efecto */
+                                margin: 20px; /* efecto a medias - solo en x */
+                            }
+                            button {
+                                background: slateblue;
+                                width: 200px;
+                                height: 200px;
+                                margin: 20px;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv>Bloque&lt/div>
+                    
+                        &lta href="#">inline&lt/a>
+                    
+                        &ltbutton>inline-block&lt/button>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo de la clase: <a href="./011-display.html" target="_blank" rel="noopener noreferrer">Display</a></p>
+                <p><strong>NOTAS: </strong>
+                    <br>
+                    Elementos de tipo bloque, utilizan todo el ancho de la pantalla.
+                    <br>
+                    Se les puede ajustar el ancho, alto, margin.
+                    <br>
+                    Aunque no se pueden colocar mas elementos en horizontal.
+                    <br><br>
+                    Elementos inline, solo ocupan el espacio de su contenido.
+                    <br>
+                    No se puede ajustar ancho, alto.
+                    <br>
+                    El margin lo toma en horizontal
+                    <br>
+                    Si tienen mas componentes acompañandolos en horizontal.
+                    <br><br>
+                    Elementos inline-block, solo ocupan el espacio de su contenido
+                    <br>
+                    Se le puede ajustar las dimensiones.
+                    <br>
+                    si tiene componentes en horizontal.
+                </p>
+            </article>
+        </section>
+        
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 12 de 23 - Tipos de display mas usados: flexbox y css grid</h2>
+
+                <p>Documentación <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">Flexbox</a></p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            .container {
+                                display: flex;
+                                background: papayawhip;
+                                justify-content: center;
+                                align-items: center;
+                                height: 200px;
+                                flex-direction: column;
+                            }
+                            .item {
+                                background: blue;
+                                width: 100px;
+                                height: 100px;
+                                /* margin: 5px; */
+                            }
+                            .item:nth-child(2n + 1) {
+                                background: cyan;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv class="container">
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                        &lt/div>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+
+                <p>Codigo de la clase <a href="./012-display-flexbox.html" target="_blank" rel="noopener noreferrer">Flex</a></p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            .container {
+                                display: grid;
+                                background: papayawhip;
+                                height: 400px;
+                                width: 400px;
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                                grid-template-rows: 1fr 1fr 1fr 1fr;
+                            }
+                    
+                            .item {
+                                background: purple;
+                                width: 100px;
+                                height: 100px;
+                                /* margin: 5px; */
+                            }
+                    
+                            .item:nth-child(2n + 1) {
+                                background: cyan;
+                            }
+                    
+                            .item:nth-child(1) {
+                                grid-column: 1 / 2;
+                                grid-row: 1 / 2;
+                            }
+                    
+                            .item:nth-child(2) {
+                                grid-column: 2 / 3;
+                                grid-row: 2 / 3;
+                            }
+                    
+                            .item:nth-child(3) {
+                                grid-column: 3 / 4;
+                                grid-row: 3 / 4;
+                            }
+                    
+                            .item:nth-child(4) {
+                                grid-column: 4 / 5;
+                                grid-row: 4 / 5;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    
+                    &ltbody>
+                        &ltdiv class="container">
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                            &ltdiv class="item">&lt/div>
+                        &lt/div>
+                    &lt/body>
+                    
+                    &lt/html>
+                </pre>
+
+
+                <p>Codigo de la clase <a href="./012-display-grid.html" target="_blank" rel="noopener noreferrer">Grid</a></p>
+
+
+                
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 13 de 23 - Modelo de Caja</h2>
+                <h3>
+                    Partes del modelo de caja
+                </h3>
+                <ul>
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ul>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            div {
+                                width: 200px;
+                                height: 200px;
+                                background: plum;
+                                padding: 20px;
+                                box-sizing: border-box;
+                                border: 1px solid hotpink;
+                                margin: 20px;
+                            }
+                            
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv>Platzi&lt/div>
+                        &ltdiv>Es lo maximo&lt/div>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>
+                    Codigo en clase: <a href="./013-modelo-de-caja.html" target="_blank" rel="noopener noreferrer">Modelo de caja</a>
+                </p>
+                <p><strong>NOTA: </strong>
+                    <em>box-sizing: border-box;</em> Nos ayuda a que se respete el tamaño 
+                    <br> indicado por el heigh y el width del elemento.
+                    <br> osea que el margen, borde y padding, seran parte dentro del tamaño de la caja.
+                    <br><br>
+                    Las margenes no se suman.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 14 de 23 - Colapso de márgenes</h2>
+                <p>
+                    En dos elementos de tipo bloque adyacentes
+                    las margenes no se suman, se colapsan.
+                </p>
+                <p>
+                    Si el display es flex o grid, no pasa esto.
+                </p>
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            section {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            div {
+                                margin: 20px;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltsection>
+                            &ltdiv>Hola&lt/div>
+                            &ltdiv>Mundo&lt/div>
+                        &lt/section>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo del Curso: <a href="./014-colapso-de-margenes.html" target="_blank" rel="noopener noreferrer">Colapso de Margenes</a></p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 15 de 23 - Posicionamiento en CSS</h2>
+                <ul>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                    <li>sticky</li>
+                    <li>static</li>
+                    <li>initial</li>
+                    <li>inherital</li>
+                </ul>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            .container {
+                                width: 200px;
+                                height: 200px;
+                                background: peachpuff;
+                                position: relative;
+                                top: 20px;
+                            }
+                            .item {
+                                width: 20px;
+                                height: 20px;
+                                background: hotpink;
+                                position: absolute;
+                                right: 0;
+                            }
+                            nav {
+                                width: 100%;
+                                height: 60px;
+                                background: lightcyan;
+                                position: fixed;
+                                top: 0;
+                            }
+                    
+                            ul p {
+                                position: sticky;
+                                top: 0;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                    
+                        &ltnav>&lt/nav>
+                    
+                        &ltdiv class="container">
+                            &ltdiv class="item">
+                    
+                            &lt/div>
+                        &lt/div>
+                    
+                    
+                    
+                        &ltp>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique dicta non nesciunt ut debitis voluptates totam laudantium nobis odit. Illum, ex. Libero, minus doloribus obcaecati harum numquam nostrum cumque?
+                            Ipsa eum dicta, temporibus facere sunt dignissimos quo velit ipsum placeat earum recusandae, ad minus rerum consectetur, iure eveniet facilis labore voluptates possimus dolore magni asperiores eos! Illo, dicta sed?
+                            Possimus, consequatur? Autem animi itaque quidem quibusdam natus nihil deleniti ab. Labore, ratione? Esse ducimus quidem magnam ipsam illum labore voluptatibus unde fuga obcaecati rem! Debitis perferendis possimus ducimus eligendi.
+                            Facere enim eos magnam. A similique veritatis sapiente eum ipsa blanditiis! Quod sint repudiandae vitae quo reprehenderit. Illum natus quam reprehenderit voluptate iure quod rerum voluptatibus, consequuntur fuga dolores sequi!
+                            Deleniti illo error ipsum, distinctio eveniet nesciunt modi adipisci consequuntur cumque consequatur reiciendis dolore, quasi illum repellat quis. Iure recusandae libero doloribus maxime id vitae voluptatem quibusdam nam sunt incidunt.
+                            Ipsum tempore nemo rem neque fugiat officiis fugit quos minima culpa sint, cumque, repudiandae ab sit quo nesciunt asperiores expedita similique quas fuga, ipsam quidem. Sapiente hic tenetur illo obcaecati!
+                            Id consectetur reiciendis illum commodi dolores iste, maiores perspiciatis deleniti quidem odio omnis, neque voluptatem libero reprehenderit vitae beatae harum eum aliquid voluptas possimus provident pariatur! Quaerat temporibus quia id.
+                            Suscipit voluptatum excepturi id, tenetur ad fugiat quia, placeat culpa quibusdam et quos dolorum, eius iure nostrum totam quam. Quibusdam maiores aperiam recusandae consequuntur et magnam odio sint facilis aut?
+                            Pariatur ut ducimus blanditiis fugit provident optio iure id dolor, totam cupiditate? Nisi molestiae ea reprehenderit deserunt cum dolor suscipit sed, consequatur fugit consectetur? Odio obcaecati eaque suscipit ab accusantium!
+                            Expedita officiis voluptate accusamus deserunt corporis, optio itaque rem accusantium ullam, corrupti velit dolorum doloribus tempore neque fugiat, provident doloremque aliquid. Numquam, expedita tempora. Nobis fuga non dolorum aliquam? Illo.
+                            Et sit esse quia, debitis ab sed maxime! Vero, quisquam eius non voluptas consequatur aliquam distinctio iste labore dolorum minima rerum atque facilis unde magnam ab dignissimos repudiandae aperiam quas.
+                            Dolores eligendi quaerat doloribus laudantium at necessitatibus impedit et culpa deleniti sunt tempore eius, numquam adipisci ipsam vero alias officiis consequuntur minima consequatur ex iure atque quod veritatis a? Dignissimos.
+                            Voluptates quia obcaecati minima dolorem dolorum! Laborum hic atque tempore natus? Rerum ex perferendis cupiditate dolore ea necessitatibus doloremque esse delectus, praesentium unde quia quisquam cum. Eius reprehenderit officiis natus.
+                            Debitis sit dolorum fugit in perspiciatis aliquam labore animi ut consectetur accusantium, corporis error! Nobis iure incidunt quos quaerat eum, ea nemo eos deserunt atque vel saepe dolore mollitia ipsam?
+                            Magnam, sequi officiis unde aliquid dolore nulla ad cumque eligendi vel doloremque! Sit, optio incidunt omnis nemo deleniti officiis ipsum corporis quis possimus voluptas, accusamus nisi, exercitationem aliquam impedit quos.
+                            Minus ipsa ex aliquid maxime laboriosam laudantium explicabo ratione ut quasi qui sapiente, dolorum libero, pariatur nam. Inventore reiciendis harum assumenda? Alias ab, ea ut aperiam maxime hic libero molestias?
+                            Non, totam? Obcaecati quia facere, repellat doloribus, quos consequatur in doloremque id voluptatem earum ratione? Eaque corrupti temporibus nihil beatae non exercitationem laboriosam delectus, quaerat, illum suscipit ipsam nobis alias.
+                            Quod eum eius incidunt, asperiores repellendus similique hic facere nostrum et veritatis perspiciatis numquam? Doloribus odit officia quam? Hic soluta numquam, voluptates odit laudantium beatae unde dolor rem ex suscipit.
+                            Debitis quis iure hic iste voluptas temporibus ipsam aliquid, ab accusantium ipsum? Ipsa, quam aspernatur quibusdam quo eligendi corrupti. Beatae voluptates minima molestiae consequuntur nesciunt quibusdam vero soluta, magnam animi.
+                            Exercitationem ipsum assumenda expedita illum quod eligendi, repudiandae laudantium in itaque fuga explicabo at voluptas! Provident quisquam vero pariatur quod unde accusamus. Dolore adipisci incidunt velit eveniet fuga dolor quasi?
+                            Nulla aperiam quisquam quam adipisci natus deleniti eaque. Commodi qui omnis asperiores earum suscipit eius fugiat fugit sequi maiores ipsum! Adipisci dignissimos accusamus aliquam, deleniti architecto ea et unde veritatis!
+                            Natus quasi assumenda a aut excepturi nemo voluptates quaerat nulla, laborum odio ad placeat dolores voluptate iste tempore fuga. Mollitia amet aliquid, iure harum cupiditate sint quis nihil ex odio.
+                            Sunt optio esse nobis quo mollitia ad delectus fugiat deleniti architecto, nesciunt, nulla aut officia fuga sed labore blanditiis repudiandae qui unde est. Soluta adipisci id distinctio unde quia ab.
+                            In aliquam natus fuga enim placeat dignissimos sit id tempore inventore ut suscipit ex voluptatibus repellendus facere deleniti, doloribus quasi, voluptates autem nobis. Quas repellendus, eveniet mollitia veritatis doloremque sint!
+                            Architecto, dignissimos tempore. Molestiae odio ducimus voluptatem voluptas quisquam voluptatibus sit alias, sint officiis, quibusdam saepe ut earum voluptatum vel nulla suscipit quod iste corporis aut facilis possimus. Deserunt, fugiat.
+                        &lt/p>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    
+                        &ltul>
+                            &ltp>Frutas&lt/p>
+                            &ltli>Manzanas&lt/li>
+                            &ltli>Pera&lt/li>
+                            &ltli>Sandia&lt/li>
+                        &lt/ul>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+
+                <p>Codigo del Curso: <a href="./015-posicionamiento-en-css.html" target="_blank" rel="noopener noreferrer">Posicionamiento en CSS</a></p>
+                <p>
+                    <strong>NOTA:</strong>
+                    <br>
+                    sticky, funciona con otros hermanos, para que sepa a quien 
+                    le da permiso. <br>
+                    funciona como un fixed, mientras llega su hermano a reemplazarlo
+                    <br>
+                    <br>
+                    static es el por defecto
+                    <br><br>
+                    initial es cuando ya hemos modificado su posicion, y 
+                    queremos volver a dejarlo como estaba al inicio.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 16 de 23 - Z-index y el contexto de apilamiento</h2>
+                <p>
+                    El apilamiento se refiere a un eje invisible para nosotros
+                    pero es desde la pantalla hasta nuestros ojos.
+                    <br>
+                    se puede pensar como capas.
+                    <br>entre mayor sea el numero en el eje z, quiere decir 
+                    que se va a superponer, sobre otra capa.
+                    <br><br>
+                    El orden de los elementos en el documento html y la posicion
+                    del elemento en los estilos le asigna automaticamente un
+                    indice a cada caja, para que se superponga sobre otra.
+                    <br>
+                    Pero si queremos ser mas especificos podemos asignar un
+                    z-index en los estilos a cada caja.
+                </p>
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            div {
+                                position: absolute;
+                                background: palegoldenrod;
+                            }
+                            .one {
+                                z-index: 5;
+                            }
+                            .two {
+                                z-index: 6;
+                            }
+                            .red {
+                                width: 200px;
+                                height: 200px;
+                                background: red;
+                                z-index: 5;
+                            }
+                            .blue {
+                                width: 200px;
+                                height: 200px;
+                                background: blue;
+                                z-index: 4;
+                            }
+                            .yellow {
+                                width: 200px;
+                                height: 200px;
+                                background: yellow;
+                                z-index: 6;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &lt!-- &ltdiv class="one">Platzi the school&lt/div>
+                        &ltdiv class="two">Master&lt/div> -->
+                    
+                        &ltsection>
+                            &ltdiv class="red">&lt/div>
+                            &ltdiv class="blue">
+                                &ltdiv class="yellow">&lt/div>
+                            &lt/div>
+                        &lt/section>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo del curso: <a href="./016-z-index.html" target="_blank" rel="noopener noreferrer">z-index</a></p>
+                <p>
+                    <strong>NOTA:</strong>
+                    <br>
+                    Vemos los casos
+                    <br><br>sin utilizar z-index
+                    <br><br>
+                    Utiizando z-index
+                    <br><br>
+                    Cuando el z-index aparentemente no funciona, pero es
+                    debido a que se compara el z-index entre adyacentes
+                    <br>
+                    es decir si un nodo hijo de un adaycente tiene un mayor z-index, 
+                    no se tomará en si no se cumple entre los adyacentes tambien
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 17 de 23 - Propiedades y valores de CSS mas usados</h2>
+                <h3>layout</h3>
+                <ul>
+                    <li>display</li>
+                </ul>
+                <h3>modelo de caja</h3>
+                <ul>
+                    <li>margin</li>
+                    <li>padding</li>
+                    <li>border</li>
+                </ul>
+                <h3>tamaños</h3>
+                <ul>
+                    <li>width</li>
+                    <li>height</li>
+                </ul>
+                <h3>Colores de fondo</h3>
+                <ul>
+                    <li>background</li>
+                    <li>background-color</li>
+                </ul>
+                <h3>textos</h3>
+                <ul>
+                    <li>font-size</li>
+                    <li>font-weight</li>
+                    <li>font-family</li>
+                    <li>text-align</li>
+                    <li>color</li>
+                </ul>
+
+                <p>Lectura recomendada
+                    <a href="https://cssreference.io/" target="_blank" rel="noopener noreferrer">https://cssreference.io/</a>
+                </p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            section {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .card {
+                                width: 300px;
+                                height: 400px;
+                                background: papayawhip;
+                                border-radius: 10px;
+                                /* todo lo que se salga lo corte */
+                                overflow: hidden;
+                            }
+                            .card img {
+                                width: 100%;
+                            }
+                            .card p {
+                                text-align: center;
+                            }
+                            .card p:nth-child(3) {
+                                color: turquoise;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltsection>
+                            &ltdiv class="card">
+                                &ltimg src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="cat">
+                                &ltp>Cat: Mimi&lt/p>
+                                &ltp>Love&lt/p>
+                            &lt/div>
+                        &lt/section>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo del curso: 
+                    <a href="./017-propiedades-mas-usadas.html" target="_blank" rel="noopener noreferrer">Propiedades mas usadas</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 18 de 23 - Unidades de Medida</h2>
+                <h3>Absolutas</h3>
+                <ul>
+                    <li>px</li>
+                    <li>pt</li>
+                    <li>pc</li>
+                    <li>in</li>
+                    <li>cm</li>
+                    <li>mm</li>
+                </ul>
+                <h3>Relativas</h3>
+                <ul>
+                    <li>rem</li>
+                    <li>em</li>
+                    <li>vw</li>
+                    <li>vh</li>
+                    <li>vmin</li>
+                    <li>vmax</li>
+                    <li>ex</li>
+                    <li>ch</li>
+                </ul>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            html {
+                                font-size: 62.5%;
+                            }
+                            body {
+                                margin: 0;
+                            }
+                            div {
+                                width: 100px;
+                                height: 100px;
+                                background: pink;
+                            }
+                            p {
+                                font-size: 3rem;
+                            }
+                            .container {
+                                width: 100vw;
+                                height: 100vh;
+                                background: plum;
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv>&lt/div>
+                        &ltp>Platzi&lt/p>
+                        &ltdiv class="container">&lt/div>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+
+                <p>
+                    codigo del curso:
+                    <a href="./018-unidades-de-medida.html" target="_blank" rel="noopener noreferrer">Unidades de Medida</a>
+                </p>
+
+                <p>
+                    <strong>NOTAS:</strong>
+                    <br>
+                    nuestro body tiene por defecto un font-size de 16px,
+                    <br>
+                    un rem equivale a esos 16px
+                    <br>
+                    hacemos un truco para que 1 rem sea igual a 10px
+                    <br>
+                    100% = 16px entonces que porcentaje son 10px
+                    <br>
+                    x = 10px * 100% / 16px = 62.5%
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 18 de 23 - Responsive Design</h2>
+                <p>
+                    @media
+                </p>
+
+                <pre class="prettyprint">
+                
+                    &lt!DOCTYPE html>
+                    &lthtml lang="en">
+                    &lthead>
+                        &ltmeta charset="UTF-8">
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lttitle>Document&lt/title>
+                        &ltstyle>
+                            div {
+                                height: 20px;
+                                background: purple;
+                            }
+                    
+                            @media (min-width: 300px) {
+                                div {
+                                    background: red;
+                                }
+                            }
+                        &lt/style>
+                    &lt/head>
+                    &ltbody>
+                        &ltdiv>&lt/div>
+                    &lt/body>
+                    &lt/html>
+                </pre>
+                <p>Codigo del curso: 
+                    <a href="./019-diseno-responsivo.html" target="_blank" rel="noopener noreferrer">Diseño Responsivo</a>
+                </p>
+            </article>
+        </section>
+        
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 20 de 23 - ¿Qué son las arquitecturas CSS? ¿Para que sirven?</h2>
+                <h3>Objetivos</h3>
+                <ul>
+                    <li>Ser predecible</li>
+                    <li>Reutilizable</li>
+                    <li>Mantenible</li>
+                    <li>Escalable</li>
+                </ul>
+                <h3>Buenas Prácticas</h3>
+                <ul>
+                    <li>Lineamientos</li>
+                    <li>Documentación</li>
+                    <li>Estándares</li>
+                    <li>Componentes</li>
+                </ul>
+                <h3>Metodologías</h3>
+                <ul>
+                    <li>oocss</li>
+                    <li>bem</li>
+                    <li>smacss</li>
+                    <li>itcss</li>
+                    <li>atomic design</li>
+                </ul>
+
+                
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 21 de 23 - OOCSS, BEM, SMACSS, ITCSS Y Atomic Design</h2>
+                
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 22 de 23 - CSS para entrevistas y mundo laboral</h2>
+                
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+            <article class="col">
+                <h2>Sección 23 de 23 - Continúa con el curso practico de frontend developer</h2>
+                
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

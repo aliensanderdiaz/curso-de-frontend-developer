@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p {
+            color: blue;
+        } */
+
+        div > p {
+            color: blue;
+        }
+
+        article + section {
+            background-color: red;
+        }
+        section ~ aside {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hola </p>
+        <p>Mundo</p>
+        <aside>
+            aside
+        </aside>
+    </div>
+    <p>Chao mundo</p>
+    <div>
+        <article>
+            <p>Adios Mundo</p>
+        </article>
+        <section>
+            hola de nuevo
+        </section>
+        <section>
+            hola de nuevo 2
+        </section>
+    </div>
+    <section>
+        chao de nuevo
+    </section>
+    <aside>
+        hello
+    </aside>
+    <aside>
+        bye
+    </aside>
+</body>
+</html>
